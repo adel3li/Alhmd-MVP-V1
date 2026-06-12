@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 2,
+  "blessings": [
+    {
+      "id": "blessing_001",
+      "order": 1,
+      "category": "din",
+      "categoryLabel": "نعم الدين",
+      "title": "نعمة الإسلام",
+      "shortTitle": "الإسلام",
+      "openingLine": "أعظمُ نعمةٍ أنعمَ اللهُ بها عليك: أن هداكَ للإسلام.",
+      "quran": {
+        "textUthmani": "ٱلْيَوْمَ أَكْمَلْتُ لَكُمْ دِينَكُمْ وَأَتْمَمْتُ عَلَيْكُمْ نِعْمَتِى وَرَضِيتُ لَكُمُ ٱلْإِسْلَـٰمَ دِينًا",
+        "surahName": "المائدة",
+        "surahNumber": 5,
+        "ayahNumber": 3,
+        "verified": true
+      },
+      "istisharSteps": [
+        { "step": 1, "type": "ground",    "text": "خذ نفسًا عميقًا… واستحضر قلبك.", "durationSec": 10 },
+        { "step": 2, "type": "visualize", "text": "تخيَّل لو أصبحتَ يومًا ولا تعرف الله…", "durationSec": 20 },
+        { "step": 3, "type": "deepen",    "text": "لا صلاة تطمئن بها… ولا قرآن يهديك… ولا دعاء تلجأ إليه…", "durationSec": 20 },
+        { "step": 4, "type": "return",    "text": "ثم افتح عينيك… أنت مسلم. هداكَ اللهُ ولم تسأله الهداية.", "durationSec": 15 },
+        { "step": 5, "type": "hamd",      "text": "فقل من قلبك: الحمد لله الذي هدانا لهذا وما كنا لنهتدي لولا أن هدانا الله.", "durationSec": 15 }
+      ],
+      "tadabbur": "مَن ذاق طعمَ الهداية عرف أنها أعظمُ عطاءٍ لا يُشترى… فكلُّ نعمةٍ بعدها تَبَعٌ لها.",
+      "duaa": "اللهم لك الحمد كما ينبغي لجلال وجهك وعظيم سلطانك…",
+      "journalPrompt": "اكتب: ما الذي شعرتَ به حين تخيَّلتَ فقدَ هذه النعمة؟",
+      "relatedPodcastEpisode": "ep_001",
+      "reviewStatus": "approved",
+      "reviewedBy": "—",
+      "reviewDate": "2026-05-01",
+      "contentVersion": 1
+    },
+    {
+      "id": "blessing_002",
+      "order": 2,
+      "category": "rizq",
+      "categoryLabel": "نعم الرزق",
+      "title": "نعمة الماء",
+      "shortTitle": "الماء",
+      "openingLine": "نعمةٌ تجري بين يديك كلَّ يومٍ بلا ثمن… حتى نسيتَ أنها نعمة.",
+      "quran": {
+        "textUthmani": "قُلْ أَرَأَيْتُمْ إِنْ أَصْبَحَ مَاؤُكُمْ غَوْرًا فَمَن يَأْتِيكُم بِمَاءٍ مَّعِينٍ",
+        "surahName": "الملك",
+        "surahNumber": 67,
+        "ayahNumber": 30,
+        "verified": false
+      },
+      "istisharSteps": [
+        { "step": 1, "type": "ground",    "text": "خذ نفسًا عميقًا… واستحضر قلبك.", "durationSec": 10 },
+        { "step": 2, "type": "visualize", "text": "تخيّل أنك أصبحتَ يومًا… ففتحتَ الصنبور فلم تجد قطرة.", "durationSec": 20 },
+        { "step": 3, "type": "deepen",    "text": "عطشٌ في حلقك… ولا وضوءَ يطهّرك… وكلُّ ما تملك لا يشتري لك شربةَ ماء.", "durationSec": 20 },
+        { "step": 4, "type": "return",    "text": "ثم انظر… الماءُ بين يديك، عذبٌ قريبٌ ميسَّر.", "durationSec": 15 },
+        { "step": 5, "type": "hamd",      "text": "فقل من قلبك: الحمد لله على الماء البارد… الحمد لله الذي يسّر لنا ما لا نقدر عليه.", "durationSec": 15 }
+      ],
+      "tadabbur": "جعل اللهُ الماءَ أصلَ كلِّ حياة… وهو يجري إليك كلَّ يومٍ بلا ثمنٍ تدفعه، فكم مرةً شربتَ اليومَ دون أن تنتبه؟",
+      "duaa": "اللهم لك الحمد على نعمة الماء، حمدًا كثيرًا طيبًا مباركًا فيه.",
+      "journalPrompt": "اكتب: متى كانت آخرُ مرةٍ شعرتَ فيها بقيمة شربة ماء؟",
+      "reviewStatus": "pending_review",
+      "contentVersion": 1
+    },
+    {
+      "id": "blessing_003",
+      "order": 3,
+      "category": "afiyah",
+      "categoryLabel": "نعم العافية",
+      "title": "نعمة البصر",
+      "shortTitle": "البصر",
+      "openingLine": "بعينيك قرأتَ هذه الكلمات… نعمةٌ تعمل في صمتٍ منذ وُلدت.",
+      "istisharSteps": [
+        { "step": 1, "type": "ground",    "text": "أغمض عينيك لحظة… وخذ نفسًا عميقًا.", "durationSec": 10 },
+        { "step": 2, "type": "visualize", "text": "تخيّل أن هذا السوادَ الذي تراه الآن… صار دنياك كلَّها.", "durationSec": 20 },
+        { "step": 3, "type": "deepen",    "text": "لا وجوهَ أحبابك… ولا ضوءَ الصباح… ولا سطرٌ تقرؤه بنفسك.", "durationSec": 20 },
+        { "step": 4, "type": "return",    "text": "ثم افتح عينيك ببطء… ها هو النورُ يعود إليك، هديةً تتجدّد كلَّ صباح.", "durationSec": 15 },
+        { "step": 5, "type": "hamd",      "text": "فقل من قلبك: الحمد لله على بصري… الحمد لله الذي أبصرتُ به طريقي اليوم.", "durationSec": 15 }
+      ],
+      "tadabbur": "نعمةُ البصر لا يعرف قدرَها إلا من فقدها… وهي معك في كل لحظةٍ من يومك، تعمل بلا أجرٍ تدفعه ولا جهدٍ تبذله.",
+      "duaa": "اللهم لك الحمد على نعمة البصر، حمدًا يملأ القلبَ شكرًا.",
+      "journalPrompt": "اكتب: ما أجملُ ما رأته عيناك اليوم؟",
+      "reviewStatus": "pending_review",
+      "contentVersion": 1
+    }
+  ]
+}

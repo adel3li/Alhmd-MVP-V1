@@ -1,0 +1,75 @@
+name: alhamd
+description: "تطبيق «الحمد» — تطبيق يومي لاستشعار نعم الله وشكرها. Arabic-first, RTL, local-first gratitude app."
+publish_to: 'none'
+
+# Bump +code on every store upload (§12.1 of the build spec).
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # State management (spec §2.1 — Riverpod; manual providers, no codegen)
+  flutter_riverpod: ^3.3.2
+
+  # Routing (deep-link ready)
+  go_router: ^17.3.0
+
+  # Local storage: Drift/SQLite for journal + completions, prefs for settings
+  drift: ^2.34.0
+  drift_flutter: ^0.3.0
+  shared_preferences: ^2.5.5
+
+  # Daily local notifications (mobile only — web is a no-op, spec §7.3)
+  flutter_local_notifications: ^22.0.0
+  timezone: ^0.11.0
+  flutter_timezone: ^5.1.0
+
+  # Analytics (anonymous events only, disabled in debug — spec §8)
+  firebase_core: ^4.10.0
+  firebase_analytics: ^12.4.2
+
+  # Dates: Eastern Arabic numerals + Hijri calendar
+  intl: ^0.20.2
+  hijri: ^3.0.1
+
+  # OS share sheet («شارك التطبيق», spec §6.6)
+  share_plus: ^13.1.0
+  cupertino_icons: ^1.0.9
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  drift_dev: ^2.34.0
+  build_runner: ^2.15.0
+
+flutter:
+  uses-material-design: true
+  generate: true # gen_l10n from lib/l10n/app_ar.arb
+
+  assets:
+    - assets/content/
+
+  # Bundled locally — google_fonts deliberately not used (offline reliability,
+  # rendering consistency across platforms — spec §2.1).
+  fonts:
+    - family: Amiri
+      fonts:
+        - asset: assets/fonts/Amiri-Regular.ttf
+        - asset: assets/fonts/Amiri-Bold.ttf
+          weight: 700
+    - family: IBMPlexSansArabic
+      fonts:
+        - asset: assets/fonts/IBMPlexSansArabic-Regular.ttf
+        - asset: assets/fonts/IBMPlexSansArabic-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/IBMPlexSansArabic-SemiBold.ttf
+          weight: 600

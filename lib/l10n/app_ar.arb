@@ -1,0 +1,92 @@
+{
+  "@@locale": "ar",
+
+  "appTitle": "الحمد",
+  "@appTitle": {
+    "description": "App name"
+  },
+
+  "onboardingTagline": "دقيقتان كل يوم… تُحيي بهما قلبك بالشكر",
+  "onboardingStart": "ابدأ",
+  "onboardingIstisharTitle": "استشعار القيمة",
+  "onboardingIstisharBody": "طريقةٌ قرآنيةٌ في التأمّل: تتخيّل بصدقٍ فقدَ نعمةٍ تعيش بها كلَّ يوم، ثم تعود إليها بقلبٍ يراها من جديد، فيمتلئ شكرًا وحمدًا.",
+  "onboardingUnderstood": "فهمت",
+  "onboardingNotifTitle": "نذكّرك بنعمةٍ واحدةٍ كل يوم. متى يناسبك؟",
+  "onboardingPickTime": "اختر وقت التذكير",
+  "onboardingSkip": "تخطّي",
+  "onboardingEnableReminder": "تفعيل التذكير",
+
+  "greeting": "السلام عليكم",
+  "todaysBlessing": "نعمة اليوم",
+  "reflectCta": "استشعر النعمة",
+  "reflectAgainCta": "أعد الاستشعار",
+  "completedToday": "حمدتَ اللهَ اليوم",
+  "noContentAvailable": "لا يوجد محتوى منشور بعد",
+
+  "journalTitle": "سجل الحمد",
+  "consistencyTitle": "المداومة",
+  "settingsTitle": "الإعدادات",
+
+  "quranSurahRef": "سورة {surah} — الآية {ayah}",
+  "@quranSurahRef": {
+    "placeholders": {
+      "surah": {"type": "String"},
+      "ayah": {"type": "String"}
+    }
+  },
+  "paraphraseMarker": "بمعناه",
+
+  "reflectionNext": "التالي",
+  "reflectionExit": "خروج",
+  "hamdButton": "الحمد لله",
+  "completionWriteHint": "اكتب حمدك…",
+  "saveToJournal": "حفظ في سجل الحمد",
+  "later": "لاحقًا",
+
+  "journalEmptyBody": "سجلُّك ما زال صفحةً بيضاء… ابدأ اليوم باستشعار نعمة",
+  "journalEmptyCta": "استشعر نعمة اليوم",
+  "delete": "حذف",
+  "deleteEntryTitle": "حذف هذا التدوين؟",
+  "deleteEntryBody": "سيُحذف هذا التدوين من سجلّك ولا يمكن استرجاعه.",
+  "cancel": "إلغاء",
+
+  "consistencySubtitle": "هذه صفحتُك مع نفسك… لا سِباقَ مع أحد",
+  "consistencyDayCompletedSemantics": "يومٌ حمدتَ اللهَ فيه",
+
+  "settingsNotificationTime": "وقت التذكير اليومي",
+  "settingsNotificationToggle": "التذكير اليومي",
+  "settingsNotificationWebNote": "التذكير اليومي غير متاح في نسخة الويب حاليًا. افتح التطبيق كل يوم لتجد نعمة اليوم بانتظارك.",
+  "settingsTheme": "المظهر",
+  "settingsThemeLight": "فاتح",
+  "settingsThemeDark": "داكن",
+  "settingsThemeAuto": "تلقائي",
+  "settingsTextSize": "حجم الخط",
+  "settingsTextSizeNormal": "عادي",
+  "settingsTextSizeLarge": "كبير",
+  "settingsAbout": "عن التطبيق",
+  "settingsShare": "شارك التطبيق",
+
+  "aboutMission": "«الحمد» تطبيقٌ يعينك على عادةٍ يوميةٍ قصيرة: أن تستشعر نعمةً واحدةً من نعم الله عليك ثم تحمده عليها من قلبك.",
+  "aboutScholarNote": "جميع النصوص الشرعية في التطبيق مُراجَعة من مختصّين، ولا يُنشر منها شيء قبل اعتماده.",
+  "aboutPrivacyNote": "بياناتك تبقى على جهازك: لا حسابات، ولا إعلانات، ولا يغادر جهازَك إلا إحصاءاتُ استخدامٍ مجهولةُ الهوية.",
+  "aboutContentVersion": "إصدار المحتوى: {version}",
+  "@aboutContentVersion": {
+    "placeholders": {
+      "version": {"type": "String"}
+    }
+  },
+  "aboutPrivacyPolicy": "سياسة الخصوصية",
+  "aboutPodcast": "بودكاست «الحمد»",
+
+  "shareAppText": "تطبيق «الحمد» — دقيقتان كل يوم تُحيي بهما قلبك بالشكر.",
+
+  "notifChannelName": "التذكير اليومي",
+  "notifChannelDesc": "تذكيرٌ يوميٌّ بنعمة اليوم",
+  "notifBody1": "نعمةُ اليوم بانتظارك… دقيقتان تُحييان قلبك",
+  "notifBody2": "﴿وَإِن تَعُدُّوا نِعْمَةَ اللَّهِ لَا تُحْصُوهَا﴾ — استشعر نعمة اليوم",
+  "notifBody3": "عُد إلى قلبك دقيقتين… واستشعر نعمة اليوم",
+
+  "timePickerConfirm": "حسنًا",
+
+  "commonClose": "إغلاق"
+}

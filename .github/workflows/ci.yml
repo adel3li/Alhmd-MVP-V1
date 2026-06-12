@@ -1,0 +1,58 @@
+# CI — spec §10.5. Every PR: content gate → RTL check → analyze → tests →
+# web release build → debug APK. The release content gate (≥30 approved
+# entries) runs on release branches and tags.
+name: CI
+
+on:
+  push:
+    branches: [main, "release/**"]
+    tags: ["v*"]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: "17"
+
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 3.44.1
+          cache: true
+
+      - name: Dependencies
+        run: flutter pub get
+
+      - name: Content gate (schema, verification flags, duplicates)
+        run: dart run tool/validate_content.dart
+
+      - name: Content gate — release threshold (release branches/tags only)
+        if: startsWith(github.ref, 'refs/heads/release/') || startsWith(github.ref, 'refs/tags/v')
+        run: dart run tool/validate_content.dart --release
+
+      - name: RTL discipline check
+        run: bash tool/check_rtl.sh
+
+      - name: Analyze (zero-warning policy)
+        run: flutter analyze
+
+      - name: Tests
+        run: flutter test --coverage
+
+      - name: Web release build (web parity gate)
+        run: flutter build web --release
+
+      - name: Android debug build
+        run: flutter build apk --debug

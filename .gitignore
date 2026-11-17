@@ -51,3 +51,6 @@ app.*.map.json
 
 # Firebase config is generated per-environment via `flutterfire configure`
 lib/firebase_options.dart
+
+# Node (Capacitor CLI)
+node_modules/
